@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diving</title>
+    <link rel="stylesheet" href="./asserts/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 
 <body>
@@ -14,37 +18,45 @@
             <a href="/" class="logo-img">
                 <img src="/asserts/img/logo.svg" alt="logo">
             </a>
-            <input type="search" placeholder="Пошук...">
-            <a href="/" class="lang-switcher__item">
-                <img src="/asserts/img/lang.svg" alt="uk">
-            </a>
-            <a href="/" class="like">
-                <img src="/asserts/img/likes.svg" alt="likes">
-            </a>
-            <a href="/" class="shop">
-                <img src="/asserts/img/shop.svg" alt="shop">
-            </a>
+            <input type="search" id="site-search" placeholder="Пошук...">
+            <ul class="lang_like_shop">
+                <li>
+                    <a href="/">
+                        <img src="/asserts/img/lang.svg" alt="uk">
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <img src="/asserts/img/likes.svg" alt="likes">
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <img src="/asserts/img/shop.svg" alt="shop">
+                     </a>
+                </li>
+            </ul>
         </header>
     </div>
     <div id="menu">
         <p>Каталог</p>
-        <nav class="menu__item">
-            <ul>
-                <li><a href="#">Маски / Трубки / Набори</a></li>
-                <li><a href="#">Ласти</a></li>
-                <li><a href="#">Гідрокостюми</a></li>
-                <li><a href="#">Прилади / Комп’ютери</a></li>
-                <li><a href="#">Балони</a></li>
-                <li><a href="#">Рукавички</a></li>
-                <li><a href="#">Ліхтарі</a></li>
-                <li><a href="#">Сумки</a></li>
-                <li><a href="#">Вантажні пояса</a></li>
-                <li><a href="#">Ножі</a></li>
+        <nav>
+            <ul class="menu__item">
+                <li><a class="menu__title" href="#">Маски / Трубки / Набори</a></li>
+                <li><a class="menu__title" href="#">Ласти</a></li>
+                <li><a class="menu__title" href="#">Гідрокостюми</a></li>
+                <li><a class="menu__title" href="#">Прилади / Комп’ютери</a></li>
+                <li><a class="menu__title" href="#">Балони</a></li>
+                <li><a class="menu__title" href="#">Рукавички</a></li>
+                <li><a class="menu__title" href="#">Ліхтарі</a></li>
+                <li><a class="menu__title" href="#">Сумки</a></li>
+                <li><a class="menu__title" href="#">Вантажні пояса</a></li>
+                <li><a class="menu__title" href="#">Ножі</a></li>
             </ul>
         </nav>
     </div>
-    <div class="filters_wrap">
-        <div class="filter_popular filter">
+    <div class="filters__wrap">
+        <div class="filter__popular filter">
             <img src="/asserts/img/menu.svg" alt="menu">
             <span>Популярні</span>
         </div>
@@ -57,33 +69,27 @@
         <div class="row">
             <div class="column">
                 <div class="product">
-                    <img src="/asserts/img/image 1.svg" alt="image 1">
-                    <img src="/asserts/img/like.svg" alt="like">
-                    <a href="#">
-                        <h3>Маска CRESSI SF1 Чорна</h3>
-                    </a>
+                    <img class="pruduct__img" src="/asserts/img/image 1.svg" alt="image 1">
+                    <img class="pruduct__like" src="/asserts/img/like.svg" alt="like">
+                    <a class="products__item__title" href="#">Маска CRESSI SF1 Чорна</a>
                     <p class="price">2 100 грн</p>
                     <button class="buy">Купити</button>
                 </div>
             </div>
             <div class="column">
                 <div class="product">
-                    <img src="/asserts/img/image 2.svg" alt="image 2">
-                    <img src="/asserts/img/like.svg" alt="like">
-                    <a href="#">
-                        <h3>Трубка SCUBAPRO SPECTRA</h3>
-                    </a>
+                    <img class="pruduct__img" src="/asserts/img/image 2.svg" alt="image 2">
+                    <img class="pruduct__like" src="/asserts/img/like.svg" alt="like">
+                    <a class="products__item__title" href="#">Трубка SCUBAPRO SPECTRA</a>
                     <p class="price">1 360 грн</p>
                     <button class="buy">Купити</button>
                 </div>
             </div>
             <div class="column">
                 <div class="product">
-                    <img src="/asserts/img/image 3.svg" alt="image 3">
-                    <img src="/asserts/img/like.svg" alt="like">
-                    <a href="#">
-                        <h3>Набір CRESSI PALAU MINI </h3>
-                    </a>
+                    <img class="pruduct__img" src="/asserts/img/image 3.svg" alt="image 3">
+                    <img class="pruduct__like" src="/asserts/img/like.svg" alt="like">
+                    <a class="products__item__title" href="#">Набір CRESSI PALAU MINI</a>
                     <p class="price">2 699 грн</p>
                     <button class="buy">Купити</button>
                 </div>
@@ -92,65 +98,66 @@
         <div class="row">
             <div class="column">
                 <div class="product">
-                    <img src="/asserts/img/image 4.svg" alt="image 4">
-                    <img src="/asserts/img/like.svg" alt="like">
-                    <a href="#">
-                        <h3>Маска CRESSI ACTION </h3>
-                    </a>
+                    <img class="pruduct__img" src="/asserts/img/image 4.svg" alt="image 4">
+                    <img class="pruduct__like" src="/asserts/img/like.svg" alt="like">
+                    <a class="products__item__title" href="#">Маска CRESSI ACTION</a>
                     <p class="price">2 545 грн</p>
                     <button class="buy">Купити</button>
                 </div>
             </div>
             <div class="column">
                 <div class="product">
-                    <img src="/asserts/img/image 5.svg" alt="image 5">
-                    <img src="/asserts/img/like.svg" alt="like">
-                    <a href="#">
-                        <h3>Трубка BARE FOLDINGI </h3>
-                    </a>
+                    <img class="pruduct__img" src="/asserts/img/image 5.svg" alt="image 5">
+                    <img class="pruduct__like" src="/asserts/img/like.svg" alt="like">
+                    <a class="products__item__title" href="#">Трубка BARE FOLDINGI</a>
                     <p class="price"> 499 грн</p>
                     <button class="buy">Купити</button>
                 </div>
             </div>
             <div class="column">
                 <div class="product">
-                    <img src="/asserts/img/image 6.svg" alt="image 6">
-                    <img src="/asserts/img/like.svg" alt="like">
-                    <a href="#">
-                        <h3>Маска CRESSI SPI</h3>
-                    </a>
+                    <img class="pruduct__img" src="/asserts/img/image 6.svg" alt="image 6">
+                    <img class="pruduct__like" src="/asserts/img/like.svg" alt="like">
+                    <a class="products__item__title" href="#">Маска CRESSI SPI</a>
                     <p class="price">1 850 грн</p>
                     <button class="buy">Купити</button>
                 </div>
             </div>
         </div>
-        <footer>
-            <img src="/asserts/img/logo2.svg" alt="logo2">
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#">Замовлення</a></li>
-                    <li><a href="#">Наша гарантія</a></li>
-                    <li><a href="#">Відстежити замовлення</a></li>
-                    <li><a href="#">Підтримка</a></li>
-                    <li><a href="#">Адреса магазинів</a></li>
+    </section>
+        <footer >
+            <section class="footer">
+                 <img class="logo2" src="/asserts/img/logo2.svg" alt="logo2">
+            <nav>
+                <ul class="menu__footer">
+                    <li><a class="footer__title" href="#">Замовлення</a></li>
+                    <li><a class="footer__title" href="#">Наша гарантія</a></li>
+                    <li><a class="footer__title" href="#">Відстежити замовлення</a></li>
+                    <li><a class="footer__title" href="#">Підтримка</a></li>
+                    <li><a class="footer__title" href="#">Адреса магазинів</a></li>
                 </ul>
             </nav>
             <div class="comunication">
                 <button class="call">Замовити дзвінок</button>
-                <p>timetodiving@gmail.com</p>
+                <p class="email">timetodiving@gmail.com</p>
             </div>
-            <div>
-                <a href="/" class="telegram">
-                    <img src="/asserts/img/icon_telegram.svg" alt="telegram">
-                </a>
-                <a href="/" class="facebook">
-                    <img src="/asserts/img/icon_facebook.svg" alt="facebook">
-                </a>
-                <a href="/" class="instagram">
-                    <img src="/asserts/img/icon_instagram.svg" alt="instagram">
-                </a>
-            </div>
-    </section>
+            <nav>
+                <ul class="social__item">
+                    <li><a href="/" class="telegram">
+                            <img src="/asserts/img/icon_telegram.svg" alt="telegram">
+                        </a>
+                    </li> <a href="/" class="facebook">
+                            <img src="/asserts/img/icon_facebook.svg" alt="facebook">
+                        </a>
+                    <li>
+                        <a href="/" class="instagram">
+                           <img src="/asserts/img/icon_instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li></li>
+                </ul>
+            </nav>
+         </section>    
     </footer>
 
 </body>
